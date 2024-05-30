@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário elaborado</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form>
+        <div>
+            <h1>Formulário</h1>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div>
+                <label for="nome">Nome:</label>
+                <input 
+                type="text"
+                id="nome"
+                name="nome"    
+                required
+                >
+                </div>
+
+                <div>
+                <label for="endereco">Endereço:</label>
+                <input 
+                type="text"
+                id="endereco"
+                name="endereco"    
+                required
+                >
+                </div>
+
+                <div>
+                <label for="cidade">Cidade:</label>
+                <input 
+                type="text"
+                id="cidade"
+                name="cidade"    
+                required
+                >
+                </div>
+
+                <div>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado" class="input">
+                    <option value="RS">Rio grande do sul</option>
+                    <option value="RN">Rio grande do norte</option>
+                    <option value="SC">Santa catarina</option>
+                    <option value="PR">Parana</option>
+                    <option value="SP">São paulo</option>
+
+                </select>
+                </div>          
+
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+
+                <div class="selection">
+                <label for="natureza do cargo">Natureza do cargo</label>
+                <div class="radio">
+                
+                <input 
+                type="radio"
+                id="gerencia"
+                name="natureza"    
+                checked
+                value="gerencia"
+                >
+                <label for="gerencia">Gerencia</label>
+                
+                
+                <input 
+                type="radio"
+                id="financeiro"
+                name="natureza"    
+                checked
+                value="financeiro"
+                >
+                <label for="financeiro">Financeiro</label>
+                
+                
+                <input 
+                type="radio"
+                id="Recepcao"
+                name="natureza"    
+                checked
+                value="recepcao"
+                >
+                <label for="recepcao">Recepção</label>
+                
+                
+                
+                <input 
+                type="radio"
+                id="administrativo"
+                name="natureza"    
+                checked
+                value="administrativo"
+                >
+                <label for="administrativo">Administrativo</label>
+                
+
+                
+                
+                <input 
+                type="radio"
+                id="juridico"
+                name="natureza"    
+                checked
+                value="juridico"
+                >
+                <label for="juridico">Jurídico</label>
+                </div>
+
+
+                <div>
+                <label for="area de interesse">Área de interesse</label>
+                
+                <div class="radio">
+                
+                <input type="checkbox" name="areas" id="computacao" value="computacao" />
+                <label for="computacao">Computação</label>
+                
+
+                
+                
+                <input type="checkbox" name="areas" id="biologia" value="biologia" />
+                <label for="biologia">Biologia</label>
+                
+
+                
+                
+                <input type="checkbox" name="areas" id="meioambiente" value="meioambiente" />
+                <label for="meioambiente">Meio ambiente</label>
+                
+
+                
+                
+                <input type="checkbox" name="areas" id="engenharia" value="engenharia" />
+                <label for="engenharia">Engenharia</label>
+                
+
+                
+                
+                <input type="checkbox" name="areas" id="historia" value="historia" />
+                <label for="historia">História</label>
+                
+                </div>
+                
+                <div>
+
+                <label for="curriculo">Mini-currículo:</label>
+                <textarea name="curriculo" id="curriculo"></textarea>
+        
+                </div>
+
+            </fieldset>
+        </div>
+        <div class="form-actions">
+
+
+            <input type="submit" class="btn-submit" >
+            <input type="reset" class="btn-reset" value="Limpar">
+            
+
+
+        </div>
+        </form>
+    </main>
+</body>
+</html>
